@@ -6,7 +6,15 @@ Minishell is a custom shell implemented in C that replicates key features of the
 Interactive Prompt: Displays a prompt while waiting for commands.  
 Command History: Maintains a history of commands during the session.  
 Command Execution: Searches for and executes commands based on the PATH variable, or using absolute/relative paths.  
-Signal Handling: Uses a single global variable to handle signals, restricting access to main data structures.  
+Built-in Commands:
+- echo (with -n option)  
+- cd (with a relative or absolute path)  
+- pwd  
+- export  
+- unset  
+- env  
+- exit  
+
 Quotes Handling:  
 - Single quotes (') prevent interpretation of meta-characters.  
 - Double quotes (") prevent interpretation of meta-characters except for $.
@@ -24,11 +32,3 @@ Control Characters:
 - Ctrl-D: Exits the shell.
 - Ctrl-\: No action (like in bash).
 
-Built-in Commands:
-- echo (with -n option)  
-- cd (with a relative or absolute path)  
-- pwd  
-- export  
-- unset  
-- env  
-- exit  
