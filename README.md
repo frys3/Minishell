@@ -32,3 +32,11 @@ Control Characters:
 - Ctrl-D: Exits the shell.
 - Ctrl-\: No action (like in bash).
 
+## Installation
+Clone the repository.
+
+To perform the initial setup of the project, you can run the following commands:
+
+```bash
+make
+```
